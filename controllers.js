@@ -57,7 +57,7 @@ function getHub(req, res) {
     res.send({
         "com.snc.teamdev.requires_codereview": "false",
         "instance_id": config.instance_id,
-        "instance_properties": "glide-jakarta-05-03-2017__patch6-11-14-2017_11-22-2017_2104.zip",
+        "instance_properties": "glide-orlando-12-11-2019__patch0-hotfix1-01-08-2020_01-12-2020_1944.zip",
         "upgrade_system_busy": false
     });
 }
