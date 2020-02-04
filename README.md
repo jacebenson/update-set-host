@@ -17,7 +17,7 @@
 
 - By default authentatication is enabled by default, to disable this, set `enable_auth` to false in `config.js`
 - By default authentatication is set to.
-	- User: `user`
+	- User:     `user`
 	- Password: `password`
 
 ## Environment variables

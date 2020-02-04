@@ -5,7 +5,7 @@ var config = {
     instance_properties: 'glide-orlando-12-11-2019__patch0-hotfix1-01-08-2020_01-12-2020_1944.zip' || process.env.INSTANCE_PROPERTIES,
     users: {}
 };
-var user = 'test' || process.env.USERNAME;
-config.users[user] = process.env.PASSWORD;
+//var user = 'test' || process.env.USERNAME;
+config.users.test = process.env.PASSWORD;
 
 module.exports = config;
