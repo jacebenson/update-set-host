@@ -57,7 +57,7 @@ function getHub(req, res) {
     res.send({
         "com.snc.teamdev.requires_codereview": "false",
         "instance_id": config.instance_id,
-        "instance_properties": "glide-orlando-12-11-2019__patch0-hotfix1-01-08-2020_01-12-2020_1944.zip",
+        "instance_properties": config.instance_properties,
         "upgrade_system_busy": false
     });
 }

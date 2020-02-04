@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-01-13 22:38:52">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>asdf</description>
+<inserted/>
+<name>[ws] Xplore: Developer Toolkit - 4.7</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d6db8e8adb964410f1e36781ca9619e1</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacebenson</sys_created_by>
+<sys_created_on>2020-01-13 22:38:51</sys_created_on>
+<sys_id>1eebce8adb964410f1e36781ca961953</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacebenson</sys_updated_by>
+<sys_updated_on>2020-01-13 22:38:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+</unload>
