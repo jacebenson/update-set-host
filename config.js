@@ -1,5 +1,5 @@
 var config = {
-    port: '3000',
+    port: process.env.PORT,
     instance_id: 'deadbeefdeadbeefdeadbeefdead8888',
     auth_enabled: true,
     users: {
