@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-06-13 22:43:28">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Postmaster enables intelligent routing of inbound emails to tasks:
+
+-Multiple ordered Email Routing Rules can be configured to determine routing behavior.
+-Use conditions such as 'Recipient is' or 'Body contains' to route intelligently.
+-From inbound emails, create records on any task-based table.
+-Automatically apply a chosen template to any created record.
+-Configure where the 'subject' and 'body' of the email should be copied.
+-For Service Catalog order creation, automatically apply a Catalog item and generate the appropriate REQ&gt;RITM hierarchy.
+-Scripting capability for advanced requirements
+
+Notes:
+-If no matching Email Routing Rules are found, the instance will continue to process existing Inbound actions.
+-To maintain the original 'To' address when redirecting email from your servers to ServiceNow, be sure 'relay' email messages.</description>
+<inserted/>
+<name>Postmaster Email Routing v1.8</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>0b51c0c9dc10610002adbc7f5f0ed2eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b2d349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_db_object_d00c6dc6dc44210002adbc7f5f0ed254</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><create_access_controls>true</create_access_controls><extension_model/><is_extendable>false</is_extendable><label>Email Routing Rule</label><live_feed_enabled>false</live_feed_enabled><name>email_routing_rule</name><number_ref/><provider_class/><super_class/><sys_app_file/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_id>d00c6dc6dc44210002adbc7f5f0ed254</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:02</sys_updated_on><user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</user_role></sys_db_object><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{:/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_id>1c6e610adc44210002adbc7f5f0ed285</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Email Routing Rule</sys_name><sys_parent/><sys_path>!!3{:/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id name="email_routing_rule" sys_source_table="sys_db_object">d00c6dc6dc44210002adbc7f5f0ed254</sys_source_id><sys_source_table>sys_db_object</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_db_object_d00c6dc6dc44210002adbc7f5f0ed254</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:06</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>32d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_5a013a2549fea10002adb605a370c5f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><disabled>ignore</disabled><field>script</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:44:11</sys_created_on><sys_id>5a013a2549fea10002adb605a370c5f0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-08-27 22:44:11</sys_updated_on><table>email_routing_rule</table><ui_policy display_value="Postmaster - Show script">1ef03a2549fea10002adb605a370c5c2</ui_policy><visible>true</visible></sys_ui_policy_action><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!4$K/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:44:11</sys_created_on><sys_id>b5113a2549fea10002adb605a370c5f5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>script</sys_name><sys_parent display_value="Postmaster - Show script">b5013a2549fea10002adb605a370c5c6</sys_parent><sys_path>!!1NV/!!4$J/!!4$K/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>5a013a2549fea10002adb605a370c5f0</sys_source_id><sys_source_table>sys_ui_policy_action</sys_source_table><sys_type/><sys_update_name>sys_ui_policy_action_5a013a2549fea10002adb605a370c5f0</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-08-27 22:44:11</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>32d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>script</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_app_module_e06e610adc44210002adbc7f5f0ed287</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Postmaster">dc6e610adc44210002adbc7f5f0ed285</application><content_page/><device_type/><filter/><hint/><homepage/><image>images/icons/email_get_send.gif</image><link_type>LIST</link_type><map_page/><mobile_title>Email Routing Rules</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>email_routing_rule</name><order/><query/><report/><roles>admin</roles><survey/><survey_overwrite>true</survey_overwrite><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_domain>global</sys_domain><sys_id>e06e610adc44210002adbc7f5f0ed287</sys_id><sys_mod_count>3</sys_mod_count><sys_overrides/><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 20:52:23</sys_updated_on><timeline_page/><title>Email Routing Rules</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{?/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_id>a46e610adc44210002adbc7f5f0ed287</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email Routing Rules</sys_name><sys_parent/><sys_path>!!3{?/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>e06e610adc44210002adbc7f5f0ed287</sys_source_id><sys_source_table>sys_app_module</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_app_module_e06e610adc44210002adbc7f5f0ed287</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 20:52:23</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>36d349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rules</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_706e610adc44210002adbc7f5f0ed28b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>706e610adc44210002adbc7f5f0ed28b</sys_id><sys_mod_count>0</sys_mod_count><sys_security_acl display_value="email_routing_rule">346e610adc44210002adbc7f5f0ed28a</sys_security_acl><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{D/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>b46e610adc44210002adbc7f5f0ed28b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>706e610adc44210002adbc7f5f0ed28b</sys_name><sys_parent/><sys_path>!!3{D/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>706e610adc44210002adbc7f5f0ed28b</sys_source_id><sys_source_table>sys_security_acl_role</sys_source_table><sys_type/><sys_update_name>sys_security_acl_role_706e610adc44210002adbc7f5f0ed28b</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>36d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_condition_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="condition" label="Email condition" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>condition</element><help/><hint/><label>Email condition</label><language>en</language><name>email_routing_rule</name><plural>Email conditions</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>016e610adc44210002adbc7f5f0ed29f</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:49:48</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{K/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>056e610adc44210002adbc7f5f0ed29f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email condition</sys_name><sys_parent display_value="Email condition">446ea9c6dc44210002adbc7f5f0ed245</sys_parent><sys_path>!!3{:/!!3{7/!!3{K/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="condition" language="en" name="email_routing_rule" sys_source_table="sys_documentation">016e610adc44210002adbc7f5f0ed29f</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_condition_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:49:48</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>36d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email condition</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_ui_list_email_routing_rule_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" sys_domain="global" table="email_routing_rule" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>name</element><list_id display_value="email_routing_rule">b7b943dedc84210002adbc7f5f0ed235</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_id>7fb943dedc84210002adbc7f5f0ed235</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>destination_table</element><list_id display_value="email_routing_rule">b7b943dedc84210002adbc7f5f0ed235</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_id>bfb943dedc84210002adbc7f5f0ed235</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>template</element><list_id display_value="email_routing_rule">b7b943dedc84210002adbc7f5f0ed235</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_id>ffb943dedc84210002adbc7f5f0ed235</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>order</element><list_id display_value="email_routing_rule">b7b943dedc84210002adbc7f5f0ed235</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_id>33b943dedc84210002adbc7f5f0ed236</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>active</element><list_id display_value="email_routing_rule">b7b943dedc84210002adbc7f5f0ed235</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_id>73b943dedc84210002adbc7f5f0ed236</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>email_routing_rule</name><parent/><position/><relationship/><sum>false</sum><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:42</sys_created_on><sys_domain>global</sys_domain><sys_id>b7b943dedc84210002adbc7f5f0ed235</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{O/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:18:16</sys_created_on><sys_id>66ae650adc44210002adbc7f5f0ed293</sys_id><sys_mod_count>0</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{O/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>b7b943dedc84210002adbc7f5f0ed235</sys_source_id><sys_source_table>sys_ui_list</sys_source_table><sys_type/><sys_update_name>sys_ui_list_email_routing_rule_null</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:42</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>3ad349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_b86e610adc44210002adbc7f5f0ed28c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>b86e610adc44210002adbc7f5f0ed28c</sys_id><sys_mod_count>0</sys_mod_count><sys_security_acl display_value="email_routing_rule">7c6e610adc44210002adbc7f5f0ed28b</sys_security_acl><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{F/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>fc6e610adc44210002adbc7f5f0ed28c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>b86e610adc44210002adbc7f5f0ed28c</sys_name><sys_parent/><sys_path>!!3{F/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>b86e610adc44210002adbc7f5f0ed28c</sys_source_id><sys_source_table>sys_security_acl_role</sys_source_table><sys_type/><sys_update_name>sys_security_acl_role_b86e610adc44210002adbc7f5f0ed28c</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>3ad349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_condition</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="condition" table="email_routing_rule"><active>true</active><array>false</array><attributes>staticDependent=sys_email</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Email condition</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>condition</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Conditions">conditions</internal_type><mandatory>false</mandatory><max_length>4000</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>09fda9c6dc44210002adbc7f5f0ed240</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:49:48</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{7/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>446ea9c6dc44210002adbc7f5f0ed245</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email condition</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{7/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="condition" name="email_routing_rule" sys_source_table="sys_dictionary">09fda9c6dc44210002adbc7f5f0ed240</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_condition</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:49:48</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>3ad349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email condition</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_346e610adc44210002adbc7f5f0ed28a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><condition/><description>Default access control on email_routing_rule</description><name>email_routing_rule</name><operation display_value="read">read</operation><script/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>346e610adc44210002adbc7f5f0ed28a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on><type display_value="record">record</type></sys_security_acl><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{C/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>786e610adc44210002adbc7f5f0ed28a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent/><sys_path>!!3{C/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>346e610adc44210002adbc7f5f0ed28a</sys_source_id><sys_source_table>sys_security_acl</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_security_acl_346e610adc44210002adbc7f5f0ed28a</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>3ed349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_ui_policy_3cd22b02dc84210002adbc7f5f0ed202</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="email_routing_rule"&gt;destination_tableSTARTSWITHsc_req^EQ&lt;item endquery="false" field="destination_table" goto="false" newquery="false" operator="STARTSWITH" or="false" value="sc_req"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Postmaster - Show catalog item&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-14 22:46:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;3cd22b02dc84210002adbc7f5f0ed202&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-14 22:46:24&lt;/sys_updated_on&gt;&lt;table&gt;email_routing_rule&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;sys_app_file action="INSERT_OR_UPDATE"&gt;&lt;customer_update&gt;true&lt;/customer_update&gt;&lt;publish_override/&gt;&lt;replace_on_upgrade&gt;true&lt;/replace_on_upgrade&gt;&lt;restore/&gt;&lt;sys_app/&gt;&lt;sys_code&gt;!!3{`/&lt;/sys_code&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-14 22:46:24&lt;/sys_created_on&gt;&lt;sys_id&gt;71f22302dc84210002adbc7f5f0ed26e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Postmaster - Show catalog item&lt;/sys_name&gt;&lt;sys_parent display_value="Email Routing Rule"&gt;1c6e610adc44210002adbc7f5f0ed285&lt;/sys_parent&gt;&lt;sys_path&gt;!!3{:/!!3{`/&lt;/sys_path&gt;&lt;sys_policy/&gt;&lt;sys_source_deleted&gt;false&lt;/sys_source_deleted&gt;&lt;sys_source_id&gt;3cd22b02dc84210002adbc7f5f0ed202&lt;/sys_source_id&gt;&lt;sys_source_table&gt;sys_ui_policy&lt;/sys_source_table&gt;&lt;sys_type&gt;code&lt;/sys_type&gt;&lt;sys_update_name&gt;sys_ui_policy_3cd22b02dc84210002adbc7f5f0ed202&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-14 22:46:24&lt;/sys_updated_on&gt;&lt;/sys_app_file&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>true</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>3ed349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Postmaster - Show catalog item</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_active</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="active" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Active</column_label><comments/><create_roles/><default_value>true</default_value><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>active</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:18:59</sys_created_on><sys_id>fcde650adc44210002adbc7f5f0ed2d8</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:24</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{Q/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:18:59</sys_created_on><sys_id>78de650adc44210002adbc7f5f0ed2d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Active</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{Q/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="active" name="email_routing_rule" sys_source_table="sys_dictionary">fcde650adc44210002adbc7f5f0ed2d8</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_active</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:24</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>72d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Active</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_4bae650adc44210002adbc7f5f0ed2a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="4bae650adc44210002adbc7f5f0ed2a4" sys_domain="global" table="email_routing_rule" version="3" view=""><sys_ui_annotation action="INSERT_OR_UPDATE"><is_plain_text>true</is_plain_text><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>34a38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><text>&lt;p&gt;Email Routing Rules determine the tasks that are created from inbound email.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Destination table&lt;/b&gt;: Table where the record will be created.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Email subject to&lt;/b&gt;: Field where the email subject will be copied.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Email body to&lt;/b&gt;: Field where the email body will be copied.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Order&lt;/b&gt;: Order in which rules are processed. Execution will stop after first match.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Template to apply&lt;/b&gt;: Pre-built template to apply to the record - used for auto-population of record values.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Apply script&lt;/b&gt;: Enable scripting to set fields on the resulting record.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Catalog item to order&lt;/b&gt;: Service Catalog item to order from email (only applies to Request &amp; Requested Item tables).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Email condition&lt;/b&gt;: Email conditions under which to use this rule.&lt;br /&gt;Use terms like '&lt;em&gt;To is fieldservices@example.com&lt;/em&gt;' or '&lt;em&gt;Body contains heartbleed virus&lt;/em&gt;'. To explore available values, look at &lt;span style="text-decoration: underline;"&gt;&lt;a title="existing received email records" href="/sys_email_list.do?sysparm_query=type%3Dreceived%5Esys_created_onONThis%20week%40javascript%3Ags.beginningOfThisWeek()%40javascript%3Ags.endOfThisWeek()" target="_blank"&gt;existing received email records&lt;/a&gt;&lt;/span&gt;. Note that recipients, subject, and body of emails are all forced to lowercase, so use lowercase values for your conditions against these fields.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;i&gt;Note: To maintain the original 'To' address when redirecting email from your servers to ServiceNow, be sure to 'relay' email messages.&lt;/i&gt;&lt;/p&gt;</text><type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type></sys_ui_annotation><sys_ui_element action="INSERT_OR_UPDATE"><element>34a38db8134ca600c794b7a12244b045</element><position>0</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b4a38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type>annotation</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>1</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>38a38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>2</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b8a38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>destination_table</element><position>3</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>3ca38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email_subject_to</element><position>4</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>bca38db8134ca600c794b7a12244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email_body_to</element><position>5</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>30a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>6</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b0a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>active</element><position>7</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>34a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>order</element><position>8</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b4a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>template</element><position>9</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>38a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>catalog_item</element><position>10</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b8a38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>apply_script</element><position>11</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>3ca38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>12</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>bca38db8134ca600c794b7a12244b046</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>condition</element><position>13</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>30a38db8134ca600c794b7a12244b047</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>script</element><position>14</position><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2016-06-13 22:42:30</sys_created_on><sys_id>b0a38db8134ca600c794b7a12244b047</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="email_routing_rule" sys_domain="global" view="Default view">4bae650adc44210002adbc7f5f0ed2a4</sys_ui_section><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2016-06-13 22:42:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>email_routing_rule</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:18:18</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_id>4bae650adc44210002adbc7f5f0ed2a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_overrides/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_4bae650adc44210002adbc7f5f0ed2a4</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:18:18</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>72d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_destination_table_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="destination_table" label="Destination table" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>destination_table</element><help/><hint/><label>Destination table</label><language>en</language><name>email_routing_rule</name><plural>Destination tables</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>096e610adc44210002adbc7f5f0ed2a0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{L/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>0d6e610adc44210002adbc7f5f0ed2a0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Destination table</sys_name><sys_parent display_value="Destination table">9c6e610adc44210002adbc7f5f0ed284</sys_parent><sys_path>!!3{:/!!3{9/!!3{L/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="destination_table" language="en" name="email_routing_rule" sys_source_table="sys_documentation">096e610adc44210002adbc7f5f0ed2a0</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_destination_table_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:06</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>76d349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Destination table</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_order</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT" element="order" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Order</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>order</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Integer">integer</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:16</sys_created_on><sys_id>99a9cf9edc84210002adbc7f5f0ed2e8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:16</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3|$/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-15 15:34:16</sys_created_on><sys_id>25a9cf9edc84210002adbc7f5f0ed2e9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Order</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3|$/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="order" name="email_routing_rule" sys_source_table="sys_dictionary">99a9cf9edc84210002adbc7f5f0ed2e8</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_order</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:34:16</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>76d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Order</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_f06e610adc44210002adbc7f5f0ed28e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>f06e610adc44210002adbc7f5f0ed28e</sys_id><sys_mod_count>0</sys_mod_count><sys_security_acl display_value="email_routing_rule">b46e610adc44210002adbc7f5f0ed28d</sys_security_acl><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{H/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>386e610adc44210002adbc7f5f0ed28e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>f06e610adc44210002adbc7f5f0ed28e</sys_name><sys_parent/><sys_path>!!3{H/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>f06e610adc44210002adbc7f5f0ed28e</sys_source_id><sys_source_table>sys_security_acl_role</sys_source_table><sys_type/><sys_update_name>sys_security_acl_role_f06e610adc44210002adbc7f5f0ed28e</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>76d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_app_application_dc6e610adc44210002adbc7f5f0ed285</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Postmaster</name><order>100</order><roles>admin</roles><sys_app_file/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_domain>global</sys_domain><sys_id>dc6e610adc44210002adbc7f5f0ed285</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:02</sys_updated_on><title>Postmaster</title><view_name/></sys_app_application><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{;/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:02</sys_created_on><sys_id>906e610adc44210002adbc7f5f0ed286</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Postmaster</sys_name><sys_parent/><sys_path>!!3{;/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>dc6e610adc44210002adbc7f5f0ed285</sys_source_id><sys_source_table>sys_app_application</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_app_application_dc6e610adc44210002adbc7f5f0ed285</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:02</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>7ad349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table/>
+<target_name>Postmaster</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_template</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="template" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Template to apply</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>template</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_template">sys_template</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual>javascript:'table=task^ORtable=' + current.destination_table</reference_qual><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>affda9c6dc44210002adbc7f5f0ed202</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:06:07</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{8/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>186ea9c6dc44210002adbc7f5f0ed246</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Template to apply</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{8/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="template" name="email_routing_rule" sys_source_table="sys_dictionary">affda9c6dc44210002adbc7f5f0ed202</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_template</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-15 15:06:07</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>7ad349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Template to apply</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_1ef03a2549fea10002adb605a370c5c2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="email_routing_rule"&gt;apply_script=true^EQ&lt;item endquery="false" field="apply_script" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Postmaster - Show script&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-08-27 22:43:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;1ef03a2549fea10002adb605a370c5c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-08-27 22:43:55&lt;/sys_updated_on&gt;&lt;table&gt;email_routing_rule&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;sys_app_file action="INSERT_OR_UPDATE"&gt;&lt;customer_update&gt;true&lt;/customer_update&gt;&lt;publish_override/&gt;&lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;&lt;restore/&gt;&lt;sys_app/&gt;&lt;sys_code&gt;!!4$J/&lt;/sys_code&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-08-27 22:43:55&lt;/sys_created_on&gt;&lt;sys_id&gt;b5013a2549fea10002adb605a370c5c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Postmaster - Show script&lt;/sys_name&gt;&lt;sys_parent display_value="Email Routing Rule"&gt;835148c9dc10610002adbc7f5f0ed214&lt;/sys_parent&gt;&lt;sys_path&gt;!!1NV/!!4$J/&lt;/sys_path&gt;&lt;sys_policy/&gt;&lt;sys_source_deleted&gt;false&lt;/sys_source_deleted&gt;&lt;sys_source_id&gt;1ef03a2549fea10002adb605a370c5c2&lt;/sys_source_id&gt;&lt;sys_source_table&gt;sys_ui_policy&lt;/sys_source_table&gt;&lt;sys_type&gt;code&lt;/sys_type&gt;&lt;sys_update_name&gt;sys_ui_policy_1ef03a2549fea10002adb605a370c5c2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-08-27 22:43:55&lt;/sys_updated_on&gt;&lt;/sys_app_file&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>7ad349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Postmaster - Show script</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_email_subject_to_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="email_subject_to" label="Email subject to" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>email_subject_to</element><help/><hint/><label>Email subject to</label><language>en</language><name>email_routing_rule</name><plural>Email subject to</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>6c1b6e0edc44210002adbc7f5f0ed2c0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 18:42:12</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{X/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>e01b6e0edc44210002adbc7f5f0ed2c1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Email subject to</sys_name><sys_parent display_value="Email subject to">ac1b6e0edc44210002adbc7f5f0ed2bf</sys_parent><sys_path>!!3{:/!!3{W/!!3{X/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="email_subject_to" language="en" name="email_routing_rule" sys_source_table="sys_documentation">6c1b6e0edc44210002adbc7f5f0ed2c0</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_email_subject_to_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 18:42:12</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>7ed349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email subject to</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_email_routing_rule_apply_script</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT" element="apply_script" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Apply script</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>apply_script</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">boolean</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:38:36</sys_created_on><sys_id>fbcf2ee149fea10002adb605a370c50f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-08-27 22:38:36</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!4$F/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:38:36</sys_created_on><sys_id>b7cf2ee149fea10002adb605a370c510</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Apply script</sys_name><sys_parent display_value="Email Routing Rule">835148c9dc10610002adbc7f5f0ed214</sys_parent><sys_path>!!1NV/!!4$F/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="apply_script" name="email_routing_rule" sys_source_table="sys_dictionary">fbcf2ee149fea10002adb605a370c50f</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_apply_script</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-08-27 22:38:36</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>7ed349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Apply script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_email_body_to_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="email_body_to" label="Email body to" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>email_body_to</element><help/><hint/><label>Email body to</label><language>en</language><name>email_routing_rule</name><plural>Email body to</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>b01b6e0edc44210002adbc7f5f0ed2c4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 18:42:12</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{Z/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>381b6e0edc44210002adbc7f5f0ed2c4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Email body to</sys_name><sys_parent display_value="Email body to">381b6e0edc44210002adbc7f5f0ed2c3</sys_parent><sys_path>!!3{:/!!3{Y/!!3{Z/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="email_body_to" language="en" name="email_routing_rule" sys_source_table="sys_documentation">b01b6e0edc44210002adbc7f5f0ed2c4</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_email_body_to_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 18:42:12</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b2d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email body to</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_destination_table</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="destination_table" table="email_routing_rule"><active>true</active><array>false</array><attributes>base_table=task</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Destination table</column_label><comments/><create_roles/><default_value>incident</default_value><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>destination_table</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">table_name</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>3d0ea9c6dc44210002adbc7f5f0ed204</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:43:19</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{9/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:01</sys_created_on><sys_id>9c6e610adc44210002adbc7f5f0ed284</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Destination table</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{9/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="destination_table" name="email_routing_rule" sys_source_table="sys_dictionary">3d0ea9c6dc44210002adbc7f5f0ed204</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_destination_table</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:43:19</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b2d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Destination table</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_7c6e610adc44210002adbc7f5f0ed28b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><condition/><description>Default access control on email_routing_rule</description><name>email_routing_rule</name><operation display_value="write">write</operation><script/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>7c6e610adc44210002adbc7f5f0ed28b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><type display_value="record">record</type></sys_security_acl><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{E/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>b06e610adc44210002adbc7f5f0ed28c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent/><sys_path>!!3{E/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>7c6e610adc44210002adbc7f5f0ed28b</sys_source_id><sys_source_table>sys_security_acl</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_security_acl_7c6e610adc44210002adbc7f5f0ed28b</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b6d349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_ui_policy_action_22f22b02dc84210002adbc7f5f0ed245</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><disabled>ignore</disabled><field>catalog_item</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:46:37</sys_created_on><sys_id>22f22b02dc84210002adbc7f5f0ed245</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:46:37</sys_updated_on><table>email_routing_rule</table><ui_policy display_value="Postmaster - Show catalog item">3cd22b02dc84210002adbc7f5f0ed202</ui_policy><visible>true</visible></sys_ui_policy_action><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>true</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{{/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:46:37</sys_created_on><sys_id>05032b02dc84210002adbc7f5f0ed249</sys_id><sys_mod_count>1</sys_mod_count><sys_name>catalog_item</sys_name><sys_parent display_value="Postmaster - Show catalog item">71f22302dc84210002adbc7f5f0ed26e</sys_parent><sys_path>!!3{:/!!3{`/!!3{{/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>22f22b02dc84210002adbc7f5f0ed245</sys_source_id><sys_source_table>sys_ui_policy_action</sys_source_table><sys_type/><sys_update_name>sys_ui_policy_action_22f22b02dc84210002adbc7f5f0ed245</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:46:37</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>true</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b6d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>catalog_item</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_email_routing_rule_script</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="script" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Script</column_label><comments/><create_roles/><default_value>//Script to set any values on the resulting record, just as you would in an Inbound Action,&#13;
+//setting values against the 'newRec' object (instead of 'current').&#13;
+//&#13;
+//Example:&#13;
+//newRec.contact_type = 'email';&#13;
+//newRec.short_description = email.subject;</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>script</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">script_plain</internal_type><mandatory>false</mandatory><max_length>8000</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:38:37</sys_created_on><sys_id>08df662549fea10002adb605a370c50f</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>ben.hollifield_SHARE</sys_updated_by><sys_updated_on>2014-10-23 21:08:04</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!4$H/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-08-27 22:38:37</sys_created_on><sys_id>80df662549fea10002adb605a370c510</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Script</sys_name><sys_parent display_value="Email Routing Rule">835148c9dc10610002adbc7f5f0ed214</sys_parent><sys_path>!!1NV/!!4$H/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="script" name="email_routing_rule" sys_source_table="sys_dictionary">08df662549fea10002adb605a370c50f</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_script</sys_update_name><sys_updated_by>ben.hollifield_SHARE</sys_updated_by><sys_updated_on>2014-10-23 21:08:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>b6d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_name</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="name" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Name</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>name</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>100</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:27:53</sys_created_on><sys_id>6bd03dc6dc44210002adbc7f5f0ed2d5</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:28:10</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{T/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:27:53</sys_created_on><sys_id>e3d03dc6dc44210002adbc7f5f0ed2d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{T/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="name" name="email_routing_rule" sys_source_table="sys_dictionary">6bd03dc6dc44210002adbc7f5f0ed2d5</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_name</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:28:10</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>bad349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_template_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="template" label="Template to apply" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>template</element><help/><hint/><label>Template to apply</label><language>en</language><name>email_routing_rule</name><plural>Template to apply</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:05</sys_created_on><sys_id>096e610adc44210002adbc7f5f0ed2a3</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:51:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{N/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:05</sys_created_on><sys_id>0d6e610adc44210002adbc7f5f0ed2a3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Template to apply</sys_name><sys_parent display_value="Template to apply">186ea9c6dc44210002adbc7f5f0ed246</sys_parent><sys_path>!!3{:/!!3{8/!!3{N/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="template" language="en" name="email_routing_rule" sys_source_table="sys_documentation">096e610adc44210002adbc7f5f0ed2a3</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_template_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:51:14</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>bad349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Template to apply</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT" element="" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element/><element_reference>false</element_reference><foreign_database/><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>fc6e610adc44210002adbc7f5f0ed28e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{I/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>786e610adc44210002adbc7f5f0ed28f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{I/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="NULL" name="email_routing_rule" sys_source_table="sys_dictionary">fc6e610adc44210002adbc7f5f0ed28e</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_null</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:06</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>bed349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule_catalog_item_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="catalog_item" label="Catalog item to order" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element>catalog_item</element><help/><hint/><label>Catalog item to order</label><language>en</language><name>email_routing_rule</name><plural>Catalog item to order</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:45:30</sys_created_on><sys_id>28c22fcedc44210002adbc7f5f0ed2c6</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:52:02</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{^/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:45:30</sys_created_on><sys_id>a8c2e702dc84210002adbc7f5f0ed2c1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Catalog item to order</sys_name><sys_parent display_value="Catalog item to order">24c22fcedc44210002adbc7f5f0ed2c6</sys_parent><sys_path>!!3{:/!!3{]/!!3{^/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="catalog_item" language="en" name="email_routing_rule" sys_source_table="sys_documentation">28c22fcedc44210002adbc7f5f0ed2c6</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule_catalog_item_en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:52:03</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>bed349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Catalog item to order</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_in_email_action_7e92390adc44210002adbc7f5f0ed20f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_in_email_action"&gt;&lt;sysevent_in_email_action action="INSERT_OR_UPDATE"&gt;&lt;action&gt;record_action&lt;/action&gt;&lt;active&gt;true&lt;/active&gt;&lt;assignment_operator/&gt;&lt;condition_script/&gt;&lt;description/&gt;&lt;event_name&gt;email.read&lt;/event_name&gt;&lt;filter_condition/&gt;&lt;from/&gt;&lt;name&gt;Postmaster Email Router&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;reply_email/&gt;&lt;required_roles/&gt;&lt;script&gt;&lt;![CDATA[routeIt();
+
+function routeIt(){
+	var sysEmailRec = getMailRec(email.uid);
+	if (sysEmailRec){
+		var match = false;
+		var pmRule = new GlideRecord("email_routing_rule");
+		pmRule.addQuery("active", true);
+		pmRule.orderBy("order");
+		pmRule.query();
+		while (pmRule.next() &amp;&amp; !match) {
+			if (checkCondition(sysEmailRec, pmRule.condition)){
+				createRec(pmRule, sysEmailRec);
+				match = true;
+				event.state="stop_processing";
+			}
+			//If no matching rule, continue with other Inbound actions
+		}
+	}
+}
+
+//Get the sys_email record, based on email uid
+function getMailRec(uid){
+	var mail = new GlideRecord("sys_email");
+	mail.addQuery("uid", uid);
+	mail.query();
+	if (mail.next()) {
+		return mail;
+	}
+	else{
+		gs.log('**** - No valid sys_email match found for incoming mail w/ uid ' + email.uid);
+	}
+	return;
+}
+
+//Check condition field for match
+function checkCondition(gr, query) {
+	gr.recipients = gr.recipients.toLowerCase();
+	gr.subject = gr.subject.toLowerCase();
+	gr.body = gr.body.toLowerCase();
+	return GlideFilter.checkRecord(gr,query);
+}
+
+//Create destination record
+function createRec(rule, emailRec){
+	var newRec;
+	//For service-catalog items, spawn proper REQ/RITM records and get appropriate record for template
+	if (rule.destination_table == 'sc_request' || rule.destination_table == 'sc_req_item'){
+		var cart = new Cart();
+		cart.addItem(rule.catalog_item);
+		newRec = cart.placeOrder();
+		if (rule.destination_table == 'sc_req_item'){
+			gs.sleep(3000); //Wait for the workflow to create the RITM
+			var recSysId = newRec.sys_id.toString();
+			newRec = new GlideRecord("sc_req_item");
+			newRec.addQuery("request", recSysId);
+			newRec.query();
+			if (newRec.next()){}
+			}
+	}
+	//For non-service-catalog items, spawn the appropriate record type
+	else{
+		newRec = new GlideRecord(rule.destination_table);
+		newRec.initialize();
+	}
+	
+	//Apply template to created record
+	if (!rule.template.nil())
+		newRec.applyTemplate(rule.template.name);
+	
+	//Eval to apply email body and short description to the appropriate fields
+	eval("newRec." + rule.email_body_to + " = 'Received from: ' + email.origemail + ':  ' + email.body_text;");
+	eval("newRec." + rule.email_subject_to + " = email.subject;");
+	
+	//Apply other table-specific settings
+	if (rule.destination_table == 'incident')
+		newRec.caller_id = gs.getUserID();
+	
+	//Apply script to record
+	if (rule.apply_script == true){
+		try{eval(rule.script);}
+		catch(err){}
+	}
+	
+	newRec.update();
+	
+	//Set 'target' field on sys_email record
+	emailRec.target_table = newRec.getTableName();
+	emailRec.instance = newRec.sys_id.toString();
+	emailRec.update();
+	
+	//Copy attachments from email to created record
+	GlideSysAttachment.copy('sys_email', emailRec.sys_id.toString(), newRec.getTableName(), newRec.sys_id.toString());
+}]]&gt;&lt;/script&gt;&lt;stop_processing&gt;true&lt;/stop_processing&gt;&lt;sys_class_name&gt;sysevent_in_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-14 14:48:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;7e92390adc44210002adbc7f5f0ed20f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Postmaster Email Router&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_in_email_action_7e92390adc44210002adbc7f5f0ed20f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-06-13 22:40:51&lt;/sys_updated_on&gt;&lt;table&gt;task&lt;/table&gt;&lt;template/&gt;&lt;type&gt;new&lt;/type&gt;&lt;/sysevent_in_email_action&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>f2d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>task</table>
+<target_name>Postmaster Email Router</target_name>
+<type>Inbound Email Actions</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_script_client_96f7bf82dc84210002adbc7f5f0ed224</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Check to see if the template corresponds to the chosen table.&lt;/description&gt;&lt;field&gt;destination_table&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Postmaster - Check Template&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading)
+		return;
+	g_form.clearMessages();
+	if (newValue == '')
+		return;
+	var template = g_form.getReference('template', callback);
+}
+
+//Process returned template record
+function callback(template){
+	var destTable = g_form.getValue('destination_table');
+	if (template.table != destTable &amp;&amp; template.table != 'task')
+		g_form.setValue('template','');
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-15 00:18:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;96f7bf82dc84210002adbc7f5f0ed224&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-15 15:08:37&lt;/sys_updated_on&gt;&lt;table&gt;email_routing_rule&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;sys_app_file action="INSERT_OR_UPDATE"&gt;&lt;customer_update&gt;true&lt;/customer_update&gt;&lt;publish_override/&gt;&lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;&lt;restore/&gt;&lt;sys_app/&gt;&lt;sys_code&gt;!!3{}/&lt;/sys_code&gt;&lt;sys_created_by&gt;ben.hollifield@snc_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-04-15 00:18:11&lt;/sys_created_on&gt;&lt;sys_id&gt;9af7bf82dc84210002adbc7f5f0ed224&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Postmaster - Check Template&lt;/sys_name&gt;&lt;sys_parent display_value="Email Routing Rule"&gt;1c6e610adc44210002adbc7f5f0ed285&lt;/sys_parent&gt;&lt;sys_path&gt;!!3{:/!!3{}/&lt;/sys_path&gt;&lt;sys_policy/&gt;&lt;sys_source_deleted&gt;false&lt;/sys_source_deleted&gt;&lt;sys_source_id&gt;96f7bf82dc84210002adbc7f5f0ed224&lt;/sys_source_id&gt;&lt;sys_source_table&gt;sys_script_client&lt;/sys_source_table&gt;&lt;sys_type&gt;code&lt;/sys_type&gt;&lt;sys_update_name&gt;sys_script_client_96f7bf82dc84210002adbc7f5f0ed224&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2014-04-15 15:08:37&lt;/sys_updated_on&gt;&lt;/sys_app_file&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>f2d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Postmaster - Check Template</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_email_subject_to</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="email_subject_to" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Email subject to</column_label><comments/><create_roles/><default_value>short_description</default_value><defaultsort/><delete_roles/><dependent>destination_table</dependent><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>email_subject_to</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">field_name</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:11</sys_created_on><sys_id>8eea6e0edc44210002adbc7f5f0ed2ab</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:39</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{W/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:11</sys_created_on><sys_id>ac1b6e0edc44210002adbc7f5f0ed2bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email subject to</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{W/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="email_subject_to" name="email_routing_rule" sys_source_table="sys_dictionary">8eea6e0edc44210002adbc7f5f0ed2ab</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_email_subject_to</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:39</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>f6d349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email subject to</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_catalog_item</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="catalog_item" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Catalog item to order</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>catalog_item</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sc_cat_item">sc_cat_item</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:45:29</sys_created_on><sys_id>a8c22fcedc44210002adbc7f5f0ed2c5</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:52:02</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{]/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 22:45:29</sys_created_on><sys_id>24c22fcedc44210002adbc7f5f0ed2c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Catalog item to order</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{]/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="catalog_item" name="email_routing_rule" sys_source_table="sys_dictionary">a8c22fcedc44210002adbc7f5f0ed2c5</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_catalog_item</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:52:02</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>f6d349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Catalog item to order</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_dictionary_email_routing_rule_email_body_to</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary element="email_body_to" table="email_routing_rule"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Email body to</column_label><comments/><create_roles/><default_value>comments</default_value><defaultsort/><delete_roles/><dependent>destination_table</dependent><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><element>email_body_to</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="">field_name</internal_type><mandatory>true</mandatory><max_length>40</max_length><name>email_routing_rule</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_type/><sizeclass/><spell_check>false</spell_check><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>e3fa2e0edc44210002adbc7f5f0ed292</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:49</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{Y/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 18:42:12</sys_created_on><sys_id>381b6e0edc44210002adbc7f5f0ed2c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email body to</sys_name><sys_parent display_value="Email Routing Rule">1c6e610adc44210002adbc7f5f0ed285</sys_parent><sys_path>!!3{:/!!3{Y/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="email_body_to" name="email_routing_rule" sys_source_table="sys_dictionary">e3fa2e0edc44210002adbc7f5f0ed292</sys_source_id><sys_source_table>sys_dictionary</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_dictionary_email_routing_rule_email_body_to</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 22:44:49</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>f6d349f8134ca600c794b7a12244b00e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule.Email body to</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_b46e610adc44210002adbc7f5f0ed28d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><condition/><description>Default access control on email_routing_rule</description><name>email_routing_rule</name><operation display_value="delete">delete</operation><script/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>b46e610adc44210002adbc7f5f0ed28d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><type display_value="record">record</type></sys_security_acl><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{G/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>f86e610adc44210002adbc7f5f0ed28d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent/><sys_path>!!3{G/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>b46e610adc44210002adbc7f5f0ed28d</sys_source_id><sys_source_table>sys_security_acl</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_security_acl_b46e610adc44210002adbc7f5f0ed28d</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>fad349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_documentation_email_routing_rule__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Email Routing Rule" language="en" table="email_routing_rule"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Email Routing Rule</label><language>en</language><name>email_routing_rule</name><plural>Email Routing Rules</plural><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>cd6e610adc44210002adbc7f5f0ed29d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{J/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:04</sys_created_on><sys_id>c16e610adc44210002adbc7f5f0ed29e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Email Routing Rule</sys_name><sys_parent display_value="email_routing_rule">786e610adc44210002adbc7f5f0ed28f</sys_parent><sys_path>!!3{:/!!3{I/!!3{J/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id element="NULL" language="en" name="email_routing_rule" sys_source_table="sys_documentation">cd6e610adc44210002adbc7f5f0ed29d</sys_source_id><sys_source_table>sys_documentation</sys_source_table><sys_type/><sys_update_name>sys_documentation_email_routing_rule__en</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:06</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>fad349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>Email Routing Rule</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_e46e610adc44210002adbc7f5f0ed288</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><condition/><description>Default access control on email_routing_rule</description><name>email_routing_rule</name><operation display_value="create">create</operation><script/><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>e46e610adc44210002adbc7f5f0ed288</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on><type display_value="record">record</type></sys_security_acl><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{A/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>6c6e610adc44210002adbc7f5f0ed288</sys_id><sys_mod_count>1</sys_mod_count><sys_name>email_routing_rule</sys_name><sys_parent/><sys_path>!!3{A/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>e46e610adc44210002adbc7f5f0ed288</sys_source_id><sys_source_table>sys_security_acl</sys_source_table><sys_type>code</sys_type><sys_update_name>sys_security_acl_e46e610adc44210002adbc7f5f0ed288</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>fed349f8134ca600c794b7a12244b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_e46e610adc44210002adbc7f5f0ed289</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>e46e610adc44210002adbc7f5f0ed289</sys_id><sys_mod_count>0</sys_mod_count><sys_security_acl display_value="email_routing_rule">e46e610adc44210002adbc7f5f0ed288</sys_security_acl><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role><sys_app_file action="INSERT_OR_UPDATE"><customer_update>true</customer_update><publish_override/><replace_on_upgrade>false</replace_on_upgrade><restore/><sys_app/><sys_code>!!3{B/</sys_code><sys_created_by>ben.hollifield@snc_SHARE</sys_created_by><sys_created_on>2014-04-14 14:17:03</sys_created_on><sys_id>3c6e610adc44210002adbc7f5f0ed289</sys_id><sys_mod_count>1</sys_mod_count><sys_name>e46e610adc44210002adbc7f5f0ed289</sys_name><sys_parent/><sys_path>!!3{B/</sys_path><sys_policy/><sys_source_deleted>false</sys_source_deleted><sys_source_id>e46e610adc44210002adbc7f5f0ed289</sys_source_id><sys_source_table>sys_security_acl_role</sys_source_table><sys_type/><sys_update_name>sys_security_acl_role_e46e610adc44210002adbc7f5f0ed289</sys_update_name><sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by><sys_updated_on>2014-04-14 14:17:03</sys_updated_on></sys_app_file></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>ben.hollifield@snc_SHARE</sys_created_by>
+<sys_created_on>2016-06-13 22:43:27</sys_created_on>
+<sys_id>fed349f8134ca600c794b7a12244b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ben.hollifield@snc_SHARE</sys_updated_by>
+<sys_updated_on>2016-06-13 22:43:27</sys_updated_on>
+<table>email_routing_rule</table>
+<target_name>email_routing_rule.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_trigger_1cd433f16f85210015244035eb3ee411</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_trigger"><sys_trigger action="INSERT_OR_UPDATE"><application/><calendar/><claimed_by/><document/><document_key/><error_count>0</error_count><job_context/><job_id display_value="RunScriptJob">81c92ce9c0a8016400e5f0d2f784ea78</job_id><last_error/><log>false</log><maintenance>false</maintenance><max_drift/><name>Share Install Logger</name><next_action>2014-01-01 23:29:16</next_action><parent/><priority>100</priority><processing_duration>0</processing_duration><repeat/><run_count>0</run_count><run_dayofmonth/><run_dayofweek>1</run_dayofweek><run_month>1</run_month><run_time>1970-01-01 08:00:00</run_time><run_weekinmonth>1</run_weekinmonth><script>var logClient = new GlideSimpleHTTPClient('https://share.servicenow.com/installLogger.do');&#13;
+var query_string = 'installed_by=' + gs.getUserName() + '&amp;instance_name=' + gs.getProperty('instance_name') + '&amp;artifact=518405b8dbc4220010c37ecfbf96193f&amp;content=06121b5e2b842100bc401d2be8da1595';&#13;
+gs.log('posting to: ' + query_string);&#13;
+logClient.get(query_string);</script><state>0</state><sys_created_by/><sys_created_on/><sys_id>1cd433f16f85210015244035eb3ee411</sys_id><sys_mod_count/><sys_scope display_value="Global">global</sys_scope><sys_updated_by/><sys_updated_on/><system_id/><trigger_class>DEFAULT</trigger_class><trigger_type>0</trigger_type></sys_trigger></record_update>]]></payload>
+<remote_update_set display_value="Postmaster Email Routing v1.8">b2d349f8134ca600c794b7a12244b00c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>bharath.prathipati@snc</sys_created_by>
+<sys_created_on>2014-06-02 22:30:02</sys_created_on>
+<sys_id>b31573f16f85210015244035eb3ee470</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>bharath.prathipati@snc</sys_updated_by>
+<sys_updated_on>2014-06-02 22:30:02</sys_updated_on>
+<table/>
+<target_name>Share Install Logger</target_name>
+<type>Schedule Item</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml></unload>
